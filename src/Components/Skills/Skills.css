@@ -1,0 +1,81 @@
+.skills-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.skills-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.skills-grid {
+    display: flex; /* Flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: center; /* Center align items */
+    gap: 40px; /* Space between items */
+}
+
+.skill {
+    /* No background or border */
+    border-radius: 10px; 
+    transition: transform 0.3s ease;
+    text-align: center; /* Center text */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items */
+    width: 100px; /* Fixed width to maintain consistency */
+}
+
+.skill:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.skill img {
+    max-width: 80%; /* Scale image to fit within the skill div */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 70px; /* Set a consistent max height */
+}
+
+/* Individual adjustments */
+.skill.python img {
+    max-width: 80%; /* Specific width adjustment for Python */
+    max-height: 80px; /* Specific height adjustment for Python */
+}
+
+.skill.java img {
+    max-width: 90%; /* Specific width adjustment for Java */
+    max-height: 70px; /* Specific height adjustment for Java */
+}
+
+.skill.javascript img {
+    max-width: 80%; /* Specific width adjustment for JavaScript */
+    max-height: 70px; /* Specific height adjustment for JavaScript */
+}
+
+.skill.php img {
+    max-width: 95%; /* Specific width adjustment for PHP */
+    max-height: 90px; /* Specific height adjustment for PHP */
+}
+
+.skill.laravel img {
+    max-width: 105%; /* Specific width adjustment for Laravel */
+    max-height: 75px; /* Specific height adjustment for Laravel */
+}
+
+.skill.mern img {
+    max-width: 85%; /* Specific width adjustment for MERN */
+    max-height: 70px; /* Specific height adjustment for MERN */
+}
+
+.skill.mysql img {
+    max-width: 100%; /* Specific width adjustment for MySQL */
+    max-height: 90px; /* Specific height adjustment for MySQL */
+}
+
+.skill span {
+    display: block;
+    font-size: 1.2em;
+    color: #fff; /* Text color */
+    margin-top: 5px; /* Space above text */
+}

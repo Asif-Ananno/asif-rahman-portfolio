@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #161531;
+  color: #fff;
+}
+
+.projects-container {
+  max-width: 1200px; /* Max width for larger screens */
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+}
+
+.projects-container h1 {
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+  gap: 20px; /* Space between the grid items */
+}
+
+.project-item {
+  padding: 20px;
+  background: #1e1e2f;
+  border-radius: 10px;
+  border: 2px solid #00bfff; /* Initial border color */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  animation: thunder-border 1.5s infinite; /* Applying the animation */
+}
+
+.project-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-item h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.project-item p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+/* Responsive Design: Single column layout on small screens */
+@media (max-width: 768px) {
+  .projects-grid {
+      grid-template-columns: 1fr; /* Single column layout for mobile */
+      justify-items: center; /* Center the items on smaller screens */
+  }
+}
+
+/* Odd number of projects: center the last item if it's on its own */
+.project-item:nth-child(odd):last-child {
+  grid-column: span 2; /* Make the last odd item span both columns */
+  justify-self: center; /* Center it horizontally */
+  text-align: center;
+}
+
+/* Hover effect to enhance interactivity */
+.project-item:hover {
+  background: #24243e; /* Slightly darker background on hover */
+  transform: scale(1.03); /* Subtle scale effect on hover */
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+/* Thunder Border Animation */
+@keyframes thunder-border {
+  0% {
+      border-color: #00bfff;
+      box-shadow: 0 0 5px #00bfff;
+  }
+  25% {
+      border-color: #ffffff;
+      box-shadow: 0 0 15px #ffffff;
+  }
+  50% {
+      border-color: #00bfff;
+      box-shadow: 0 0 5px #00bfff;
+  }
+  75% {
+      border-color: #ffffff;
+      box-shadow: 0 0 15px #ffffff;
+  }
+  100% {
+      border-color: #00bfff;
+      box-shadow: 0 0 5px #00bfff;
+  }
+}

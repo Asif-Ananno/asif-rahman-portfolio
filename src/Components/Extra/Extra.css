@@ -1,0 +1,35 @@
+.activities-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .activities-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .activities-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: left;
+  }
+  
+  .activities-list li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    padding: 10px;
+    border-left: 4px solid #00bfff; /* Left border to highlight */
+    background-color: #1e1e2f;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .activities-list li:hover {
+    background-color: #24243e; /* Subtle background change on hover */
+  }
+  

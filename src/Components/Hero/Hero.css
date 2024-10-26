@@ -1,0 +1,95 @@
+/* Hero.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #161531;
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.hero.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero img {
+  width: 200px; /* Adjust the size as needed */
+  height: 200px; /* Ensure the height is the same as width for a perfect circle */
+  border-radius: 50%; /* This makes the image round */
+  object-fit: cover; /* This ensures the image covers the area and avoids distortion */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  text-align: center;
+  width: 70%;
+  font-size: 60px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.hero p {
+  width: 50%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.hero-action {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between the buttons */
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.hero-connect, .hero-resume {
+  padding: 20px 40px;
+  border-radius: 20px;
+  background: linear-gradient(267deg, #3E5C72 0.36%, #5A9BD6 102.06%);
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.hero-connect:hover, .hero-resume:hover {
+  border: 2px solid white;
+  transform: scale(1.05);
+}
+
+.hero h1 span {
+  background: linear-gradient(267deg, #3E5C72 0.36%, #5A9BD6 102.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-action {
+  display: flex;
+  gap: 20px; /* Add some space between buttons */
+}
+
+.hero-github {
+  padding: 20px 40px;
+  border-radius: 20px;
+  background: linear-gradient(267deg, #3E5C72 0.36%, #5A9BD6 102.06%);
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.hero-github:hover {
+  border: 2px solid white;
+  transform: scale(1.05);
+}

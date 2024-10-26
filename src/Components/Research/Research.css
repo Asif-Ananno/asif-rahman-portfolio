@@ -1,0 +1,57 @@
+body {
+    background-color: #161531;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 40px; /* Add padding to the body */
+}
+
+.research-container {
+    max-width: 1200px; /* Optional: Max width for larger screens */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.research-container h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.research-item {
+    margin-bottom: 40px; /* Space between each research item */
+    padding: 20px; /* Optional padding for spacing */
+    transition: transform 0.3s ease; /* Transition effect for hover */
+}
+
+.research-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.research-item h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #00bfff; /* Different color for headings */
+}
+
+.research-item p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.research-button {
+    padding: 10px 20px;
+    background: linear-gradient(267deg, #3E5C72, #5A9BD6);
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px; /* More rounded edges */
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 191, 255, 0.2); /* Soft shadow for depth */
+}
+
+.research-button:hover {
+    background: linear-gradient(267deg, #5A9BD6, #00bfff);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 191, 255, 0.4);
+}

@@ -1,0 +1,45 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 170px;
+}
+
+.navbar-logo {
+  width: 400px; /* Increased width for logo */
+  height: auto; /* Keeps the aspect ratio */
+  margin-left: -120px; /* Adjusted value to move logo more to the left */
+  margin-right: 30px; /* Add margin to the right of the logo for gap */
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px; /* Space between menu items */
+  font-size: 24px; /* Increased font size */
+}
+
+.nav-menu li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li:hover {
+  color: #00bfff; /* Light blue color */
+}
+
+.nav-connect {
+  padding: 20px 40px;
+  border-radius: 20px;
+  background: linear-gradient(267deg, #3E5C72 0.36%, #5A9BD6 102.06%);
+  font-size: 24px; /* Increased font size */
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.nav-connect:hover {
+  transform: scale(1.05);
+}
