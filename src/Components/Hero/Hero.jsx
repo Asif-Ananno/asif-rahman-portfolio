@@ -26,7 +26,7 @@ const Hero = () => {
     <div id='about' className='hero'>
       <img src={profile_img} alt="Profile" />
       <h1><span>Hi!! I am Asif Ananno.</span> I am a Computer Science and Engineering graduate from BRAC University</h1>
-      <p> I’m passionate about problem-solving and love generating new ideas. Web development excites me, and I have a deep interest in machine learning and artificial intelligence. I’m always exploring ways to innovate and make an impact in the tech field.</p>
+      <p>I’m passionate about problem-solving and love generating new ideas. Web development excites me, and I have a deep interest in machine learning and artificial intelligence. I’m always exploring ways to innovate and make an impact in the tech field.</p>
       <div className="hero-action">
         
         <div className="hero-connect" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
