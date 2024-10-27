@@ -1,4 +1,11 @@
 import React from 'react';
+import pythonLogo from '../../assets/python.png';
+import javaLogo from '../../assets/java-logo-1.png';
+import jsLogo from '../../assets/js6.png';
+import phpLogo from '../../assets/php3.svg';
+import laravelLogo from '../../assets/laravel5.webp';
+import mernLogo from '../../assets/mern.webp';
+import mysqlLogo from '../../assets/mysql-logo.svg';
 import './Skills.css'; // Create a separate CSS file for styles
 
 const Skills = () => {
@@ -7,32 +14,32 @@ const Skills = () => {
       <h2>My Skills</h2>
       <div className="skills-grid">
         <div className="skill python">
-          <img src="src/assets/python.png" alt="Python" />
-        
+          <img src={pythonLogo} alt="Python" />
+          <p>Python</p>
         </div>
         <div className="skill java">
-          <img src="src/assets/java-logo-1.png" alt="Java" />
-          
+          <img src={javaLogo} alt="Java" />
+          <p>Java</p>
         </div>
         <div className="skill javascript">
-          <img src="src/assets/js6.png" alt="JavaScript" />
-          
+          <img src={jsLogo} alt="JavaScript" />
+          <p>JavaScript</p>
         </div>
         <div className="skill php">
-          <img src="src/assets/php3.svg" alt="PHP" />
-          
+          <img src={phpLogo} alt="PHP" />
+          <p>PHP</p>
         </div>
         <div className="skill laravel">
-          <img src="src/assets/laravel5.webp" alt="Laravel" />
-          
+          <img src={laravelLogo} alt="Laravel" />
+          <p>Laravel</p>
         </div>
         <div className="skill mern">
-          <img src="src/assets/mern.webp" alt="MERN" />
-         
+          <img src={mernLogo} alt="MERN" />
+          <p>MERN</p>
         </div>
         <div className="skill mysql">
-          <img src="src/assets/mysql-logo.svg" alt="MySQL" />
-          
+          <img src={mysqlLogo} alt="MySQL" />
+          <p>MySQL</p>
         </div>
       </div>
     </div>

@@ -1,11 +1,30 @@
 /* Navbar.css */
-
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 170px;
+  margin: 20px auto;
+  padding: 0 20px; /* Added padding to give more space */
+  max-width: 1200px; /* Keeps the navbar from stretching too wide */
+  width: 100%; /* Ensures the navbar spans the entire width of the page */
+  transform: translateX(-20px); /* Move the entire navbar 20px to the left */
 }
+
+.nav-menu {
+  display: flex;
+  gap: 60px; /* Increased gap between menu items */
+  list-style: none; /* Removes bullet points */
+  padding-left: 0; /* Removes default padding on the list */
+  margin: 0; /* Removes default margin */
+}
+
+.nav-menu li {
+  font-size: 18px; /* Adjust size as needed */
+  cursor: pointer;
+}
+
+
+
 
 .navbar-logo {
   width: 400px; /* Increased width for logo */
@@ -14,13 +33,7 @@
   margin-right: 30px; /* Add margin to the right of the logo for gap */
 }
 
-.nav-menu {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  gap: 60px; /* Space between menu items */
-  font-size: 24px; /* Increased font size */
-}
+
 
 .nav-menu li {
   cursor: pointer;
