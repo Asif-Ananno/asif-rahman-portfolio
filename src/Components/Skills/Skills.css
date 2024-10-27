@@ -9,22 +9,23 @@
     margin-bottom: 20px;
 }
 
+/* Skills Grid */
 .skills-grid {
-    display: flex; /* Flexbox for horizontal layout */
-    flex-wrap: wrap; /* Allow items to wrap onto the next line */
-    justify-content: center; /* Center align items */
-    gap: 40px; /* Space between items */
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to the next line on smaller screens */
+    justify-content: center;
+    gap: 40px; /* Space between skill items */
 }
 
+/* Skill Item */
 .skill {
-    /* No background or border */
-    border-radius: 10px; 
+    border-radius: 10px;
     transition: transform 0.3s ease;
-    text-align: center; /* Center text */
-    display: flex; /* Use flexbox for centering */
-    flex-direction: column; /* Stack image and text vertically */
-    align-items: center; /* Center items */
-    width: 100px; /* Fixed width to maintain consistency */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
 }
 
 .skill:hover {
@@ -32,50 +33,75 @@
 }
 
 .skill img {
-    max-width: 80%; /* Scale image to fit within the skill div */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 70px; /* Set a consistent max height */
+    max-width: 80%;
+    height: auto;
+    max-height: 70px; /* Maintain consistent image height */
 }
 
-/* Individual adjustments */
+/* Adjustments for individual skill logos */
 .skill.python img {
-    max-width: 80%; /* Specific width adjustment for Python */
-    max-height: 80px; /* Specific height adjustment for Python */
+    max-width: 80%;
+    max-height: 80px;
 }
 
 .skill.java img {
-    max-width: 90%; /* Specific width adjustment for Java */
-    max-height: 70px; /* Specific height adjustment for Java */
+    max-width: 90%;
+    max-height: 70px;
 }
 
 .skill.javascript img {
-    max-width: 80%; /* Specific width adjustment for JavaScript */
-    max-height: 70px; /* Specific height adjustment for JavaScript */
+    max-width: 80%;
+    max-height: 70px;
 }
 
 .skill.php img {
-    max-width: 95%; /* Specific width adjustment for PHP */
-    max-height: 90px; /* Specific height adjustment for PHP */
+    max-width: 95%;
+    max-height: 90px;
 }
 
 .skill.laravel img {
-    max-width: 105%; /* Specific width adjustment for Laravel */
-    max-height: 75px; /* Specific height adjustment for Laravel */
+    max-width: 105%;
+    max-height: 75px;
 }
 
 .skill.mern img {
-    max-width: 85%; /* Specific width adjustment for MERN */
-    max-height: 70px; /* Specific height adjustment for MERN */
+    max-width: 85%;
+    max-height: 70px;
 }
 
 .skill.mysql img {
-    max-width: 100%; /* Specific width adjustment for MySQL */
-    max-height: 90px; /* Specific height adjustment for MySQL */
+    max-width: 100%;
+    max-height: 90px;
 }
 
+/* Skill Name */
 .skill span {
     display: block;
     font-size: 1.2em;
-    color: #fff; /* Text color */
-    margin-top: 5px; /* Space above text */
+    color: #fff;
+    margin-top: 5px;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .skills-container h2 {
+        font-size: 2em; /* Reduce heading size for smaller screens */
+    }
+    
+    .skills-grid {
+        gap: 20px; /* Reduce gap between items on smaller screens */
+    }
+    
+    .skill {
+        width: 80px; /* Adjust skill box width for smaller screens */
+    }
+
+    .skill img {
+        max-width: 70%;
+        max-height: 60px; /* Adjust image size for smaller screens */
+    }
+
+    .skill span {
+        font-size: 1em; /* Adjust font size for skill names */
+    }
 }

@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -5,6 +6,7 @@ body {
   color: #fff;
 }
 
+/* Projects Container */
 .projects-container {
   max-width: 1200px; /* Max width for larger screens */
   margin: 0 auto;
@@ -12,17 +14,20 @@ body {
   text-align: center;
 }
 
+/* Heading Styles */
 .projects-container h1 {
   font-size: 3em;
   margin-bottom: 40px;
 }
 
+/* Grid Layout for Projects */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two columns layout */
   gap: 20px; /* Space between the grid items */
 }
 
+/* Project Item Styles */
 .project-item {
   padding: 20px;
   background: #1e1e2f;
@@ -34,11 +39,13 @@ body {
   animation: thunder-border 1.5s infinite; /* Applying the animation */
 }
 
+/* Visibility on load */
 .project-item.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
+/* Project Item Heading and Description */
 .project-item h2 {
   font-size: 2em;
   margin-bottom: 10px;
@@ -52,8 +59,22 @@ body {
 /* Responsive Design: Single column layout on small screens */
 @media (max-width: 768px) {
   .projects-grid {
-      grid-template-columns: 1fr; /* Single column layout for mobile */
-      justify-items: center; /* Center the items on smaller screens */
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    justify-items: center; /* Center the items on smaller screens */
+    padding: 20px; /* Add some padding for mobile */
+  }
+
+  .projects-container h1 {
+    font-size: 2.5em; /* Smaller font size for the heading */
+    margin-bottom: 20px; /* Less margin for the heading */
+  }
+
+  .project-item h2 {
+    font-size: 1.8em; /* Smaller heading for project items */
+  }
+
+  .project-item p {
+    font-size: 1em; /* Smaller description for mobile */
   }
 }
 
@@ -75,23 +96,23 @@ body {
 /* Thunder Border Animation */
 @keyframes thunder-border {
   0% {
-      border-color: #00bfff;
-      box-shadow: 0 0 5px #00bfff;
+    border-color: #00bfff;
+    box-shadow: 0 0 5px #00bfff;
   }
   25% {
-      border-color: #ffffff;
-      box-shadow: 0 0 15px #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 0 15px #ffffff;
   }
   50% {
-      border-color: #00bfff;
-      box-shadow: 0 0 5px #00bfff;
+    border-color: #00bfff;
+    box-shadow: 0 0 5px #00bfff;
   }
   75% {
-      border-color: #ffffff;
-      box-shadow: 0 0 15px #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 0 15px #ffffff;
   }
   100% {
-      border-color: #00bfff;
-      box-shadow: 0 0 5px #00bfff;
+    border-color: #00bfff;
+    box-shadow: 0 0 5px #00bfff;
   }
 }

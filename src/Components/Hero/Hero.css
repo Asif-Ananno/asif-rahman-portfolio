@@ -55,7 +55,7 @@ body {
   margin-bottom: 50px;
 }
 
-.hero-connect, .hero-resume {
+.hero-connect, .hero-resume, .hero-github {
   padding: 20px 40px;
   border-radius: 20px;
   background: linear-gradient(267deg, #3E5C72 0.36%, #5A9BD6 102.06%);
@@ -64,7 +64,7 @@ body {
   transition: 0.5s;
 }
 
-.hero-connect:hover, .hero-resume:hover {
+.hero-connect:hover, .hero-resume:hover, .hero-github:hover {
   border: 2px solid white;
   transform: scale(1.05);
 }
@@ -75,21 +75,33 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.hero-action {
-  display: flex;
-  gap: 20px; /* Add some space between buttons */
-}
 
-.hero-github {
-  padding: 20px 40px;
-  border-radius: 20px;
-  background: linear-gradient(267deg, #3E5C72 0.36%, #5A9BD6 102.06%);
-  font-size: 22px;
-  cursor: pointer;
-  transition: 0.5s;
-}
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .hero img {
+    width: 150px; /* Adjust image size for mobile */
+    height: 150px; /* Ensure height is the same as width */
+  }
 
-.hero-github:hover {
-  border: 2px solid white;
-  transform: scale(1.05);
+  .hero h1 {
+    font-size: 36px; /* Decrease font size for the heading */
+    width: 90%; /* Make heading width responsive */
+  }
+
+  .hero p {
+    width: 90%; /* Make paragraph width responsive */
+    font-size: 18px; /* Decrease font size for paragraph */
+    line-height: 28px; /* Adjust line height */
+  }
+
+  .hero-action {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px; /* Reduce space between buttons */
+  }
+
+  .hero-connect, .hero-resume, .hero-github {
+    width: 100%; /* Make buttons full-width */
+    font-size: 20px; /* Decrease font size for buttons */
+    padding: 15px; /* Adjust padding for buttons */
+  }
 }

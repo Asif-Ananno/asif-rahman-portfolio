@@ -1,40 +1,59 @@
 .contact-container {
-    text-align: center;
-    padding: 40px;
-    background-color: #161531;
-    color: #fff;
+  text-align: center;
+  padding: 40px;
+  background-color: #161531;
+  color: #fff;
+}
+
+.contact-message {
+  font-size: 1.5em; /* Increased font size for the message */
+  margin-bottom: 20px;
+}
+
+.contact-icons {
+  margin-top: 20px;
+}
+
+.contact-logo {
+  width: 50px; /* Adjust size as needed */
+  margin: 0 15px;
+  transition: transform 0.3s ease;
+}
+
+.contact-logo:hover {
+  transform: scale(1.2); /* Add a zoom effect on hover */
+}
+
+.email-section {
+  margin-top: 20px;
+  font-size: 1.2em; /* Slightly larger font for email */
+}
+
+.email-link {
+  color: #00bfff; /* Email link color */
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline; /* Underline the email on hover */
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 20px; /* Adjust padding for mobile */
   }
-  
+
   .contact-message {
-    font-size: 1.5em; /* Increased font size for the message */
-    margin-bottom: 20px;
+    font-size: 1.2em; /* Decrease font size for mobile */
   }
-  
-  .contact-icons {
-    margin-top: 20px;
-  }
-  
+
   .contact-logo {
-    width: 50px; /* Adjust size as needed */
-    margin: 0 15px;
-    transition: transform 0.3s ease;
+    width: 40px; /* Adjust logo size for mobile */
+    margin: 0 10px; /* Less margin between logos */
   }
-  
-  .contact-logo:hover {
-    transform: scale(1.2); /* Add a zoom effect on hover */
-  }
-  
+
   .email-section {
-    margin-top: 20px;
-    font-size: 1.2em; /* Slightly larger font for email */
+    font-size: 1em; /* Decrease email font size for mobile */
   }
-  
-  .email-link {
-    color: #00bfff; /* Email link color */
-    text-decoration: none;
-  }
-  
-  .email-link:hover {
-    text-decoration: underline; /* Underline the email on hover */
-  }
-  
+}

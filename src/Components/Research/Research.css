@@ -1,24 +1,28 @@
+/* Global Styles */
 body {
     background-color: #161531;
     color: #fff;
     font-family: Arial, sans-serif;
-    padding: 40px; /* Add padding to the body */
+    padding: 40px; /* Padding to give breathing space around content */
 }
 
+/* Research Container */
 .research-container {
-    max-width: 1200px; /* Optional: Max width for larger screens */
+    max-width: 1200px; /* Max width for larger screens */
     margin: 0 auto;
     text-align: center;
 }
 
+/* Heading Styles */
 .research-container h1 {
     font-size: 3em;
     margin-bottom: 40px;
 }
 
+/* Research Item Styles */
 .research-item {
     margin-bottom: 40px; /* Space between each research item */
-    padding: 20px; /* Optional padding for spacing */
+    padding: 20px; /* Padding for spacing inside the item */
     transition: transform 0.3s ease; /* Transition effect for hover */
 }
 
@@ -26,18 +30,21 @@ body {
     transform: translateY(-5px); /* Lift effect on hover */
 }
 
+/* Research Item Headings */
 .research-item h2 {
     font-size: 2em;
     margin-bottom: 10px;
     color: #00bfff; /* Different color for headings */
 }
 
+/* Research Item Paragraph */
 .research-item p {
     font-size: 1.2em;
     line-height: 1.5;
     margin-bottom: 15px;
 }
 
+/* Research Button */
 .research-button {
     padding: 10px 20px;
     background: linear-gradient(267deg, #3E5C72, #5A9BD6);
@@ -45,13 +52,38 @@ body {
     font-size: 1.1em;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 20px; /* More rounded edges */
+    border-radius: 20px; /* Rounded edges for button */
     transition: background 0.3s ease, transform 0.3s ease;
     box-shadow: 0 5px 15px rgba(0, 191, 255, 0.2); /* Soft shadow for depth */
 }
 
+/* Button Hover Effect */
 .research-button:hover {
     background: linear-gradient(267deg, #5A9BD6, #00bfff);
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 191, 255, 0.4);
+}
+
+/* Responsive Design: Smaller Screens */
+@media (max-width: 768px) {
+    body {
+        padding: 20px; /* Reduce body padding for smaller screens */
+    }
+
+    .research-container h1 {
+        font-size: 2.5em; /* Adjust heading size for mobile */
+    }
+
+    .research-item h2 {
+        font-size: 1.8em; /* Slightly smaller heading for research items */
+    }
+
+    .research-item p {
+        font-size: 1em; /* Smaller text for better readability on mobile */
+    }
+
+    .research-button {
+        font-size: 1em; /* Adjust button size on smaller screens */
+        padding: 10px 15px; /* Adjust padding for the button */
+    }
 }
